@@ -107,6 +107,31 @@ main{
 
 
 
+/* facts section style start hare  */
+
+.facts-card-container{
+     display: flex;
+     justify-content: space-around;
+}
+.facts-card-container .card{
+     border-radius: 8px;
+     border: 1px solid #FF900E;
+     text-align: center ;
+     padding: 30px 30px;
+}
+.facts-card-container .card-tittle{
+     font-size: 1.25rem;
+     font-weight: 600;
+     margin-top: 5px;
+}
+.facts-card-container .card-stats{
+     font-size: 2.8rem;
+     color: #424242;
+     margin-top: 10px;
+     margin-bottom: 10px;
+
+}
+
 
 
 
@@ -123,13 +148,19 @@ main{
           padding: 20px;
      }
      nav,
-     .teams-container
+     .teams-container,
+     .facts-card-container
      {
           flex-direction: column;
      }
      
-     .teams-img-container{
+     .teams-img-container,
+     .facts-card-container
+     {
           grid-template-columns: 1fr;
+     }
+     .facts-card-container{
+          gap: 20px;
      }
 }
 
